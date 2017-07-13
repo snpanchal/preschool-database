@@ -2,7 +2,8 @@ package preschool;
 
 import java.sql.*;
 
-/* Copyright Little Flowers Daycare & Preschool 2017
+/**
+ * Copyright Little Flowers Daycare & Preschool 2017
  * @author Shyam Panchal
  *
  * This class contains methods for all operations and interactions
