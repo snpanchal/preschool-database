@@ -1,4 +1,5 @@
-/**Computer Science IB SL
+/**
+ * Copyright Little Flowers Daycare & Preschool 2017
  * @author Shyam Panchal
  *
  * This class represents a family doctor for each
