@@ -1,4 +1,5 @@
-/**Computer Science IB SL
+/**
+ * Copyright Little Flowers Daycare & Preschool
  * @author Shyam Panchal
  *
  * This class represents a person that can be
