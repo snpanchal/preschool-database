@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Computer Science IB SL
+ * Copyright Little Flowers Daycare & Preschool 2017
  * @author Shyam Panchal
  *
  * This class contains all user interactions with this
