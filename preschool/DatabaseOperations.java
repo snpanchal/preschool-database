@@ -1,6 +1,8 @@
+package preschool;
+
 import java.sql.*;
 
-/**Computer Science IB SL
+/* Copyright Little Flowers Daycare & Preschool 2017
  * @author Shyam Panchal
  *
  * This class contains methods for all operations and interactions
