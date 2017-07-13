@@ -1,4 +1,7 @@
-/**Computer Science IB SL
+package preschool;
+
+/**
+ * Copyright Little Flowers Daycare & Preschool 2017
  * @author Shyam Panchal
  *
  * This class represents a guardian to an added
