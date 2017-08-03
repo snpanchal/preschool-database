@@ -1,5 +1,3 @@
-package preschool;
-
 /**
  * Copyright Little Flowers Daycare & Preschool 2017
  * @author Shyam Panchal
