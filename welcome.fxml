@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="750.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preschool.SwitchScenes">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox>
+         <children>
+            <Label text="Welcome! Choose your action:" BorderPane.alignment="TOP_LEFT">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#allStudentsClicked" prefHeight="40.0" prefWidth="1000.0" text="All Students" />
+            <Button mnemonicParsing="false" onAction="#classListClicked" prefHeight="40.0" prefWidth="1000.0" text="Class List" />
+            <Button mnemonicParsing="false" onAction="#addStudentsClicked" prefHeight="40.0" prefWidth="1000.0" text="Add Students" />
+            <Button mnemonicParsing="false" onAction="#deleteStudentsClicked" prefHeight="40.0" prefWidth="1000.0" text="Delete Students" />
+            <Button mnemonicParsing="false" onAction="#parentsClicked" prefHeight="40.0" prefWidth="1000.0" text="Parents/Guardians" />
+            <Button mnemonicParsing="false" onAction="#familyDoctorsClicked" prefHeight="40.0" prefWidth="1000.0" text="Family Doctors" />
+            <Button mnemonicParsing="false" onAction="#emergencyContactsClicked" prefHeight="40.0" prefWidth="1000.0" text="Emergency Contacts" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

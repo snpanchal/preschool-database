@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preschool.AddStudentsController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="368.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#allStudentsClicked" prefWidth="300.0" text="All Students" />
+            <Button mnemonicParsing="false" onAction="#classListClicked" prefWidth="300.0" text="Class List" />
+            <Button mnemonicParsing="false" onAction="#addStudentsClicked" prefWidth="300.0" text="Add Students" />
+            <Button mnemonicParsing="false" onAction="#deleteStudentsClicked" prefWidth="300.0" text="Delete Students" />
+            <Button mnemonicParsing="false" onAction="#parentsClicked" prefWidth="300.0" text="Parents/Guardians" />
+            <Button mnemonicParsing="false" onAction="#familyDoctorsClicked" prefWidth="300.0" text="Family Doctors" />
+            <Button mnemonicParsing="false" onAction="#emergencyContactsClicked" prefWidth="300.0" text="Emergency Contacts" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Student Details" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="56.0" text="Full Name:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="56.0" />
+            <Label layoutX="15.0" layoutY="99.0" text="Class Name:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="99.0" />
+            <Label layoutX="15.0" layoutY="144.0" text="Birthday (in format MM/DD/YY):" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="144.0" />
+            <Label layoutX="15.0" layoutY="188.0" text="Special Conditions (separated by commas):" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="188.0" />
+            <Label layoutX="325.0" layoutY="56.0" text="Health Card Number:" AnchorPane.leftAnchor="325.0" AnchorPane.topAnchor="56.0" />
+            <TextField fx:id="studentName" layoutX="116.0" layoutY="51.0" />
+            <TextField fx:id="studentClass" layoutX="116.0" layoutY="94.0" />
+            <TextField fx:id="studentBirthday" layoutX="245.0" layoutY="139.0" />
+            <TextField fx:id="studentHealthCard" layoutX="490.0" layoutY="51.0" />
+            <TextField fx:id="studentConditions" layoutX="310.0" layoutY="183.0" />
+            <Label layoutX="15.0" layoutY="225.0" text="Parent/Guardian Details">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="255.0" text="Parent/Guardian 1" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="286.0" text="Full Name:" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="guardian1Name" layoutX="123.0" layoutY="281.0" />
+            <Label layoutX="21.0" layoutY="328.0" text="Address:" AnchorPane.leftAnchor="15.0" />
+            <Label layoutX="10.0" layoutY="366.0" text="Occupation:" AnchorPane.leftAnchor="15.0" />
+            <Label layoutX="8.0" layoutY="406.0" text="Phone Number:" AnchorPane.leftAnchor="15.0" />
+            <Label layoutX="15.0" layoutY="446.0" text="E-mail:" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="guardian1Address" layoutX="123.0" layoutY="323.0" />
+            <TextField fx:id="guardian1Occupation" layoutX="123.0" layoutY="361.0" />
+            <TextField fx:id="guardian1PhoneNum" layoutX="123.0" layoutY="401.0" />
+            <TextField fx:id="guardian1Email" layoutX="123.0" layoutY="441.0" />
+            <TextField fx:id="guardian2Email" layoutX="454.0" layoutY="441.0" />
+            <TextField fx:id="guardian2PhoneNum" layoutX="454.0" layoutY="401.0" />
+            <TextField fx:id="guardian2Occupation" layoutX="454.0" layoutY="361.0" />
+            <TextField fx:id="guardian2Address" layoutX="454.0" layoutY="323.0" />
+            <Label layoutX="346.0" layoutY="446.0" text="E-mail:" AnchorPane.leftAnchor="340.0" />
+            <Label layoutX="339.0" layoutY="406.0" text="Phone Number:" AnchorPane.leftAnchor="340.0" />
+            <Label layoutX="341.0" layoutY="366.0" text="Occupation:" AnchorPane.leftAnchor="340.0" />
+            <Label layoutX="340.0" layoutY="328.0" text="Address:" AnchorPane.leftAnchor="340.0" />
+            <TextField fx:id="guardian2Name" layoutX="454.0" layoutY="281.0" />
+            <Label layoutX="339.0" layoutY="286.0" text="Full Name:" AnchorPane.leftAnchor="340.0" />
+            <Label layoutX="338.0" layoutY="254.0" text="Parent/Guardian 2" AnchorPane.leftAnchor="340.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="487.0" text="Family Doctor Details" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="521.0" text="Name:" AnchorPane.leftAnchor="15.0" />
+            <Label layoutX="298.0" layoutY="521.0" text="Phone Number:" />
+            <Label layoutX="15.0" layoutY="559.0" text="Address:" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="familyDoctorName" layoutX="78.0" layoutY="516.0" />
+            <TextField fx:id="familyDoctorAddress" layoutX="78.0" layoutY="554.0" />
+            <TextField fx:id="familyDoctorPhoneNum" layoutX="420.0" layoutY="516.0" />
+            <Label layoutX="15.0" layoutY="600.0" text="Emergency Contact Details">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emergencyContactPhoneNum" layoutX="419.0" layoutY="636.0" />
+            <TextField fx:id="emergencyContactName" layoutX="77.0" layoutY="636.0" />
+            <Label layoutX="297.0" layoutY="641.0" text="Phone Number:" />
+            <Label layoutX="15.0" layoutY="641.0" text="Name:" AnchorPane.leftAnchor="15.0" />
+            <Button layoutX="573.0" layoutY="673.0" mnemonicParsing="false" onAction="#addStudent" text="Add Student" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

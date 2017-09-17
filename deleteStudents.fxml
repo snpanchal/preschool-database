@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preschool.DeleteStudentsController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#allStudentsClicked" prefWidth="300.0" text="All Students" />
+            <Button mnemonicParsing="false" onAction="#classListClicked" prefWidth="300.0" text="Class List" />
+            <Button mnemonicParsing="false" onAction="#addStudentsClicked" prefWidth="300.0" text="Add Students" />
+            <Button mnemonicParsing="false" onAction="#deleteStudentsClicked" prefWidth="300.0" text="Delete Students" />
+            <Button mnemonicParsing="false" onAction="#parentsClicked" prefWidth="300.0" text="Parents/Guardians" />
+            <Button mnemonicParsing="false" onAction="#familyDoctorsClicked" prefWidth="300.0" text="Family Doctors" />
+            <Button mnemonicParsing="false" onAction="#emergencyContactsClicked" prefWidth="300.0" text="Emergency Contacts" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="53.0" layoutY="32.0" text="Which student would you like to delete?" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+            <TextField fx:id="studentField" layoutX="15.0" layoutY="36.0" promptText="Student Name" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="40.0" />
+            <Button layoutX="15.0" layoutY="78.0" mnemonicParsing="false" onAction="#deleteStudent" text="Delete Student" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="80.0" />
+            <Label fx:id="label" layoutX="15.0" layoutY="152.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
