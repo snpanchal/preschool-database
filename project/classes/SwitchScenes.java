@@ -1,5 +1,3 @@
-package preschool;
-
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,6 +6,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Pre-School 2017
+ */
 
 public class SwitchScenes {
     @FXML
