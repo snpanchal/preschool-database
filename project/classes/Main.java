@@ -1,10 +1,13 @@
-package preschool;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Pre-School 2017
+*/
 
 public class Main extends Application {
 
