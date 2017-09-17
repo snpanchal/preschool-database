@@ -2,6 +2,11 @@ package preschool;
 
 import javafx.beans.property.SimpleStringProperty;
 
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Pre-School 2017
+*/
+
 public class Guardian {
     //Fields for the guardian
     private SimpleStringProperty name;
