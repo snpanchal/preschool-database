@@ -1,11 +1,14 @@
-package preschool;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Pre-School 2017
+*/
 
 public class DatabaseOperations {
     private static Connection conn;//Connection to the database
