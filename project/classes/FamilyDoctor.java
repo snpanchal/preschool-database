@@ -1,5 +1,3 @@
-package preschool;
-
 public class FamilyDoctor {
     //Fields for the family doctor
     private String name;
@@ -7,6 +5,9 @@ public class FamilyDoctor {
     private String phoneNum;
 
     /**
+     * @author Shyam Panchal
+     * Copyright Little People's Preschool 2017
+     *
      * This is a constructor method for the FamilyDoctor
      * object.
      * @param name family doctor's name
