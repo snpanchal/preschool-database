@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Pre-School 2017
+ */
+
 public class AddStudentsController extends SwitchScenes {
 	// Student details
 	@FXML private TextField studentName;
