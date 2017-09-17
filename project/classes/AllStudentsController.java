@@ -1,5 +1,3 @@
-package preschool;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,6 +11,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Preschool 2017
+ */
 
 public class AllStudentsController extends SwitchScenes implements Initializable {
     @FXML private TableView<Student> studentTable;
