@@ -1,11 +1,12 @@
-package preschool;
-
 public class EmergencyContact {
     //Fields for the emergency contact
     private String name;
     private String phoneNum;
 
     /**
+     * @author Shyam Panchal
+     * Copyright Little People's Pre-School 2017
+     *
      * This is a constructor method for the
      * EmergencyContact object.
      * @param name emergency contact's name
