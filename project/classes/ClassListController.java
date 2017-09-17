@@ -1,5 +1,3 @@
-package preschool;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -11,6 +9,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+
+/**
+ * @author Shyam Panchal
+ * Copyright Little People's Pre-School 2017
+ */
 
 public class ClassListController extends SwitchScenes {
 	@FXML private TableView<Student> studentTable;
