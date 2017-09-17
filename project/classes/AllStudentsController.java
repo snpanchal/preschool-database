@@ -14,7 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
  * @author Shyam Panchal
- * Copyright Little People's Preschool 2017
+ * Copyright Little People's Pre-School 2017
  */
 
 public class AllStudentsController extends SwitchScenes implements Initializable {
